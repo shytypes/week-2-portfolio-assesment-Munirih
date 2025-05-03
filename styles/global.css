@@ -1,10 +1,208 @@
-/* remove default browser spacing*/
+/* remove default browser spacing */
 * {
   margin: 0px;
   padding: 0px;
+}
+body { 
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  font-family: 'jetbrains mono', monospace;
+  background-color: #4e4d4d; 
+  color: white;
+  width: 50%;
+  margin: auto;
+  
+}
+img {
+  border-radius: 50%;
+  width: 160px; 
+  height: 160px; 
+  object-fit: cover; 
+  display: block; 
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+#box {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: white; 
+  color: black;
+}
+
+#summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+} 
+
+.education-experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-hobbies-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+  
+}
+
+.child {
+  flex: 1;
+}
+
+div {
+  padding: 10px
+}
+
+.span-color {
+  color: cornflowerblue;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+#contactMe {
+  display: flex;
+  border-radius: 50%; 
+  margin: 5px;
+  padding: 20px;
+  background-color: cornflowerblue; 
+  width: 70px; 
+  height: 70px; 
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+}
+#info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-title {
+  font-weight: 600;
+  color: cornflowerblue;
+  font-size: 40px;
+  margin-bottom: 5px;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+  }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  border-radius: 50px;
+  font-weight: 500;
+
+}
+
+.form-container textarea {
+  height: 200px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.form-container button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+
+}
+
+.contact-inputs:focus {
+  border: 2px solid cornflowerblue;
+
+}
+
+#contact-details-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#submitted-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
 }
 
 /*title text style*/
 /* the font-family 'JetBrains Mono', has been linked
  * and is available for your use
  * */
+

@@ -5,23 +5,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>My amazing portfolio</title>
     <!-- add fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <!-- local style -->
     <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
     <!-- Header Area -->
-    <header></header>
+    <header>
+      
+      <div class="container">
+        <div id="profile">
+          <h2>MUNIRIH NGANYADE</h2>
+          <div >
+            <img src="/assets/images/image-01.jpg" alt="profile picture"> 
+          </div>    
+        </div>
+        <div id ="box">
+            <p> Email: <span class="span-color"> munirih.nganyade@gmail.com </span></p>
+            <p> Phone: +27740352363</p>
+            <p> LinkedIn: <a class="span-color" href="https://www.linkedin.com/in/munirih-nganyade-zowe-7a625840/">https://www.linkedin.com/in/munirih-nganyade-zowe/</a></p>
+        </div>
+      </div>
+      <div id="summary">
+        <h2> Summary </h2>
+        <p> I am a Software Developer with hands-on experience in both front-end and back-end development. 
+          I have a passion for building robust, scalable web applications and I am comfortable working across the stack to deliver clean, efficient code and user-friendly solutions. 
+          I am eager to contribute to dynamic teams and work on impactful projects. 
+        </p>
+      </div>
+    </header>
     <!-- Main Area -->
     <main>
-      <h1>My Amazing Portfolio</h1>
+      <div class="education-experience-container">
+        <div class="child">
+          <h2>Education</h2>
+          <hr>
+          <p> B. Sc in Informatics | 2014 - 2018</p>
+          <p> <span class="span-color">University of South Africa</span> - South Africa</p>
+        </div>
+        <div class="child"> 
+          <h2> Experience</h2>
+          <hr>
+          <p><span class="span-color">Software Developer</span> | Roger Layton Associates | 2019 - Current</p>
+          <ul>
+            <li> Currently working on upgrading ETHER Inventory using python and flask, 
+              an inventory system designed to assist with the GRAP103 audits process 
+              of museums in South Africa. The existing system was built on ASP.NET framework. </li>
+            <li> Assisted with the development of OneMuseum, an aggregation portal 
+              for heritage institutions to publish their content as a unified and trusted sources. </li>
+          </ul>
+          <p><span class="span-color"> IT Service Manager Intern</span> | Tabi Corporation | Mar 2019 - June 2019</p>
+          <ul>
+            <li> Designed User Interfaces and Designed and implemented Workflows to automate business processes using Ivanti software platform</li>
+            <li> Wrote technical documentation</li>
+        </ul>
+      </div>
+    </div>
+      <div class="skills-hobbies-container">
+        <div class="child">
+          <h2> Skills</h2>
+          <hr>
+          <ul>
+            <li> SQL for Database management</li>
+            <li> Programming Languages: C++, Python and JavaScript (learning in progress)</li>
+            <li> Frameworks: Flask, Bootstrap</li>
+            <li> CI/CD tools: Git, Maven, Jenkins, Docker.</li>
+          </ul>
+        </div>
+        <div class="child">
+          <h2> Hobbies</h2>
+          <hr>
+          <ul>
+            <li> Exploring tourists attractions</li>
+            <li> Hiking trails</li>
+            <li> Dancing</li>
+            <li> Trying new recipes</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p id="info">I would love to hear from you. Please click the button below to take you to the contact me page. You will be required to fill out a form.</p>
+      </div>
+      <div class="button-container">
+        <button type="button" id="contactMe" onClick="redirectToFormPage()">Contact Me</button>
+      </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
