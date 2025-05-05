@@ -184,7 +184,7 @@ hr {
 
 }
 
-#contact-details-view {
+#submitted-data {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,14 +192,6 @@ hr {
   gap: 20px;
 }
 
-#submitted-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-
-}
 
 /*title text style*/
 /* the font-family 'JetBrains Mono', has been linked

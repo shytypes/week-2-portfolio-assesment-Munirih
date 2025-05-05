@@ -10,7 +10,7 @@ function handleFormSubmit(event) {
     const lastName = document.querySelector("#surName").value;        
     const email = document.querySelector("#email").value;
     const message = document.querySelector("#message").value;
-    const contactDetailsView = document.querySelector("#contact-details-view");
+    const submittedData = document.querySelector("#submitted-data");
 
     event.preventDefault();
     const userData = {
@@ -21,18 +21,26 @@ function handleFormSubmit(event) {
     };
 /*
     localStorage.setItem("userData", JSON.stringify(userData));
-    window.location.href = "confirmation.html";
+    
 
 */
     
-    contactDetailsView.innerHTML = `
-        <h2>Confirming your Contact Details</h2>
+    const submittedDataHTML = `
+        <h2>Confirming your inputs</h2>
         <p><strong>First Name:</strong> ${userData.firstName}</p>
         <p><strong>Last Name:</strong> ${userData.lastName}</p>
         <p><strong>Email:</strong> ${userData.email}</p>
         <p><strong>Message:</strong> ${userData.message}</p>
     `;
 
+   
+    form.style.display = "none";
+    submittedData.innerHTML = submittedDataHTML;
+    submittedData.style.display = "block";
+
+    setTimeout(() => {
+        window.location.href = "confirmation.html"; 
+    }, 15000);
 }
 
 form.addEventListener("submit", handleFormSubmit);

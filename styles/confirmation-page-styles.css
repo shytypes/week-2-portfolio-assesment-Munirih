@@ -1,0 +1,46 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #f4f4f4; /* Optional: Add a background color */
+}
+
+#confirmation-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center; /* Center-align the text */
+    background-color: #ffffff; /* Optional: Add a background color */
+    padding: 30px; /* Add padding inside the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+#confirmation-section h1 {
+    font-size: 40px;
+    color: green; /* Highlight the heading */
+}
+
+#confirmation-section p {
+    font-size: 18px;
+    color: #333333;
+}
+
+#confirmation-section a {
+    text-decoration: none;
+    color: white;
+    background-color: cornflowerblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#confirmation-section a:hover {
+    background-color: royalblue;
+}
