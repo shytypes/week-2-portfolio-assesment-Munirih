@@ -10,7 +10,7 @@ function handleFormSubmit(event) {
     const lastName = document.querySelector("#surName").value;        
     const email = document.querySelector("#email").value;
     const message = document.querySelector("#message").value;
-    const submittedData = document.querySelector("#submitted-data");
+    const submittedData = document.querySelector(".contact");
 
     event.preventDefault();
     const userData = {
@@ -19,13 +19,9 @@ function handleFormSubmit(event) {
         email: email,
         message: message,
     };
-/*
-    localStorage.setItem("userData", JSON.stringify(userData));
-    
 
-*/
     
-    const submittedDataHTML = `
+     submittedData.innerHTML = `
         <h2>Confirming your inputs</h2>
         <p><strong>First Name:</strong> ${userData.firstName}</p>
         <p><strong>Last Name:</strong> ${userData.lastName}</p>
@@ -33,10 +29,6 @@ function handleFormSubmit(event) {
         <p><strong>Message:</strong> ${userData.message}</p>
     `;
 
-   
-    form.style.display = "none";
-    submittedData.innerHTML = submittedDataHTML;
-    submittedData.style.display = "block";
 
     setTimeout(() => {
         window.location.href = "confirmation.html"; 
