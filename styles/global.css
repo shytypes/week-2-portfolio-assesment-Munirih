@@ -134,10 +134,10 @@ hr {
 .contact {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default margin */
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
   }
 
 .form-container {
@@ -186,10 +186,11 @@ hr {
 
 #submitted-data {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column; 
+  gap: 15px; 
+  padding: 20px; 
+  text-align: left; 
+  font-size: 18px;
 }
 
 

@@ -22,11 +22,13 @@ function handleFormSubmit(event) {
 
     
      submittedData.innerHTML = `
-        <h2>Confirming your inputs</h2>
-        <p><strong>First Name:</strong> ${userData.firstName}</p>
-        <p><strong>Last Name:</strong> ${userData.lastName}</p>
-        <p><strong>Email:</strong> ${userData.email}</p>
-        <p><strong>Message:</strong> ${userData.message}</p>
+        <div id="submitted-data">
+            <h2>Confirming your inputs</h2>
+            <p><strong>First Name:</strong> ${userData.firstName}</p>
+            <p><strong>Last Name:</strong> ${userData.lastName}</p>
+            <p><strong>Email:</strong> ${userData.email}</p>
+            <p><strong>Message:</strong> ${userData.message}</p>
+        </div>
     `;
 
 
